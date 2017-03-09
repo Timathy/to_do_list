@@ -1,0 +1,367 @@
+/***************************
+**** GENERAL ****
+***************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Corbel', sans-serif;
+    font-size: 16px;
+    position: relative;
+    font-weight: 400;
+}
+
+/***************************
+**** HEADER ****
+***************************/
+
+header {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  background-color: #9dc7c8;
+}
+
+#center-title {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header-title {
+  padding-top: 31px;
+  padding-bottom: 32px;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+/***************************
+**** MAIN TASKS CONTENT ****
+***************************/
+
+#main {
+  width: 100%;
+  height: 300px;
+}
+
+.task-wrapper {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  top: 53px;
+}
+
+/***************************
+**** INPUT TASKS CONTENT ****
+***************************/
+
+.task-input {
+  width: 90%;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.input-style {
+  width: 75%;
+  height: 65px;
+  border: none;
+  border-radius: 35px;
+  background-color: #b3e0e0;
+  color: #ffffff;
+  font-size: 1.6em;
+  padding-left: 1.5em;
+  padding-right: 2.6em;
+  position: relative;
+  left: 133px;
+  top: 11px;
+}
+
+.input-btn {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 35px;
+  background-color: #519c9d;
+  color: #ffffff;
+  position: relative;
+  top: 18px;
+  left: 65px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.plus-sign-style {
+  display: inline-block;
+  font-size: 60px;
+  line-height: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.input-btn:hover {
+  transform: scale(1.1);
+  background-color: #64c1c1;
+}
+
+/***************************
+**** SELECT TASKS CONTENT ****
+***************************/
+
+.select-tasks {
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+}
+
+.select-titles-wrapper {
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.select-title {
+  width: 18%;
+  height: 30px;
+
+  float: left;
+  margin-left: 20px;
+
+  text-align: center;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.select-tasks-wrapper {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.select-style {
+  width: 18%;
+  height: 60px;
+  border: none;
+
+  background: url("./resources/../../images/1488178420_basics-08.svg") no-repeat right #b3e0e0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position-x: 90%;
+  /*background-size: 40px;*/
+
+  float: left;
+  margin-left: 20px;
+
+  padding: 0.4em 0.5em 0.3em 0.4em;
+  font-size: 21px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+/***************************
+**** TASKS CONTENT ****
+***************************/
+
+.tasks {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  position: relative;
+  top: 93px;
+}
+
+.to-do-task-left {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 7em;
+}
+
+.to-do-task-right {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 7em;
+}
+
+.to-do-task-bottom {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 7em;
+}
+
+.to-do-title {
+  text-align: center;
+  cursor: default;
+}
+
+.left-title {
+  color: #48b8e0;
+}
+
+.right-title {
+  color: #eb7256;
+}
+
+.bottom-title {
+  color: #72c7af;
+}
+
+.to-do-wrapper {
+  width: 100%;
+  height: 50px;
+  float: left;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.left-wrapper {
+  background-color: #48b8e0;
+}
+
+.right-wrapper {
+  background-color: #eb7256;
+}
+
+.bottom-wrapper {
+  background-color: #72c7af;
+}
+
+.to-do-text {
+  font-size: 24px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  color: #fff;
+}
+
+/***************************
+**** BUTTONS CONTENT ****
+***************************/
+
+.complete-btn, .hold-btn, .delete-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.to-do-complete {
+  position: absolute;
+  right: 120px;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.2s all ease-in-out;
+}
+
+.to-do-hold {
+  position: absolute;
+  right: 70px;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.3s all ease-in-out;
+}
+
+.to-do-delete {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.4s all ease-in-out;
+}
+
+.to-do-cmplt-style {
+  background: url("./resources/../../images/buttons/to-do-btns/svg/check.svg") no-repeat;
+}
+
+.to-do-hold-style {
+  background: url("./resources/../../images/buttons/to-do-btns/svg/block.svg") no-repeat;
+}
+
+.to-do-del-style {
+  background: url("./resources/../../images/buttons/to-do-btns/svg/close.svg") no-repeat;
+}
+
+.to-do-cmplt-style:hover,
+.to-do-hold-style:hover,
+.to-do-del-style:hover {
+  background-color: #69c7e1;
+}
+
+.on-hold-cmplt-style {
+  right: 70px;
+  background: url("./resources/../../images/buttons/to-do-btns/svg/check.svg") no-repeat;
+}
+
+.on-hold-del-style {
+  background: url("./resources/../../images/buttons/to-do-btns/svg/close.svg") no-repeat;
+}
+
+.on-hold-cmplt-style:hover,
+.on-hold-del-style:hover {
+  background-color: #e78a7b;
+}
+
+.finish-del-style {
+  background: url("./resources/../../images/buttons/to-do-btns/svg/close.svg") no-repeat;
+}
+
+.finish-del-style:hover {
+  background-color: #93d2c0;
+}
+
+.left-wrapper:hover .to-do-complete {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.left-wrapper:hover .to-do-hold {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.left-wrapper:hover .to-do-delete {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.right-wrapper:hover .to-do-complete {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.right-wrapper:hover .to-do-delete {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bottom-wrapper:hover .to-do-delete {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TO DO App</title>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="./resources/vendors/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
+          rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+          rel="stylesheet" type="text/css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
+  </head>
+  <body>
+    <header id="header-main">
+      <div id="center-title">
+        <a class="header-title" href="index.html">TO DO LIST</a>
+      </div> <!-- END OF DIV TITLE WRAPPER -->
+    </header> <!-- END OF HEADER TAG -->
+
+    <div id="main">
+      <div class="task-wrapper">
+        <div class="task-input">
+          <input class="input-style input-value" type="text" name="inputLimit" maxlength="30" placeholder="Enter a task" />
+          <button class="input-btn"><span class="plus-sign-style">&#43;</span></button>
+        </div>
+
+        <div class="select-tasks">
+          <div class="select-titles-wrapper">
+            <h4 class="select-title">Select a day</h4>
+            <h4 class="select-title">Select hour from</h4>
+            <h4 class="select-title">Select min from</h4>
+            <h4 class="select-title">Select hour to</h4>
+            <h4 class="select-title">Select min to</h4>
+          </div>
+
+          <div class="select-tasks-wrapper">
+            <select class="days select-style"><!-- DYNAMICALLY LOADED --></select>
+            <select id="s-0" class="time-from time-hours-from select-style"><!-- DYNAMICALLY LOADED --></select>
+            <select id="s-2" class="time-from time-mins-from select-style"><!-- DYNAMICALLY LOADED --></select>
+            <select id="s-1" class="time-to time-hours-to select-style"><!-- DYNAMICALLY LOADED --></select>
+            <select id="s-3" class="time-to time-mins-to select-style"><!-- DYNAMICALLY LOADED --></select>
+          </div>
+        </div>
+
+        <div class="tasks">
+          <!-- <div class="to-do-task-left">
+            <h1 class="to-do-title left-title">TO DO TASKS</h1>
+            <div class="to-do-wrapper left-wrapper">
+              <p class="to-do-text">1. Buy groceries - 16:30 - 17:00 - Monday</p>
+              <button class="complete-btn to-do-complete to-do-cmplt-style"></button>
+              <button class="hold-btn to-do-hold to-do-hold-style"></button>
+              <button class="delete-btn to-do-delete to-do-del-style"></button>
+            </div>
+          </div>
+
+          <div class="to-do-task-right">
+            <h1 class="to-do-title right-title">ON HOLD TASKS</h1>
+            <div class="to-do-wrapper right-wrapper">
+              <p class="to-do-text">1. Pay electricity - 09:00 - 09:30 - Tuesday</p>
+              <button class="complete-btn to-do-complete on-hold-cmplt-style"></button>
+              <button class="delete-btn to-do-delete on-hold-del-style"></button>
+            </div>
+          </div>
+
+          <div class="to-do-task-bottom">
+            <h1 class="to-do-title bottom-title">FINISHED TASKS</h1>
+            <div class="to-do-wrapper bottom-wrapper">
+              <p class="to-do-text">1. Pay electricity - 09:00 - 09:30 - Tuesday</p>
+              <button class="delete-btn to-do-delete finish-del-style"></button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./resources/vendors/jQuery/jquery-3.1.1.js"></script>
+    <script src="./resources/scripts/app.js"></script>
+  </body>
+</html>
